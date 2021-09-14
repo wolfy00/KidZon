@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/engbg"
+    tools:context=".English">
+
+    <TextView
+        android:id="@+id/title_english"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/atma_medium"
+        android:text="@string/EngTitle"
+        android:textColor="#9C27B0"
+        android:textSize="40sp"
+        android:textStyle="bold"
+        app:autoSizeTextType="uniform"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/CapsAlpha"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/atma_medium"
+        android:rotationX="15"
+        android:text="ABCD..."
+        android:textSize="40sp"
+        app:backgroundTint="#9C27B0"
+        app:layout_constraintBottom_toTopOf="@+id/words"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/title_english" />
+
+    <Button
+        android:id="@+id/words"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/atma_medium"
+        android:rotationX="15"
+        android:text="OPPOSITE WORDS"
+        android:textSize="30sp"
+        app:backgroundTint="#9C27B0"
+        app:autoSizeTextType="uniform"
+        app:layout_constraintBottom_toTopOf="@+id/rhyme"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/CapsAlpha" />
+
+    <Button
+        android:id="@+id/rhyme"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/atma_medium"
+        android:rotationX="15"
+        android:text="RHYMES"
+        android:textSize="40sp"
+        app:backgroundTint="#9C27B0"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/words" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

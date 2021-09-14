@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@drawable/gkbg"
+    android:layout_height="match_parent"
+    tools:context=".Words">
+
+    <TextView
+        android:id="@+id/gkTitlle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/atma_medium"
+        android:gravity="center"
+        android:text="THINGS TO KNOW"
+        android:textColor="#008CFB"
+        android:textSize="35sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/animalBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/atma_medium"
+        android:rotationX="15"
+        android:text="ANIMALS"
+        android:textSize="40sp"
+
+        app:backgroundTint="#2196F3"
+        app:layout_constraintBottom_toTopOf="@+id/fruitBtn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/gkTitlle" />
+
+    <Button
+        android:id="@+id/fruitBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/atma_medium"
+        android:rotationX="15"
+        android:text="FRUITS "
+        android:textSize="40sp"
+        app:backgroundTint="#2196F3"
+        app:layout_constraintBottom_toTopOf="@+id/colorBtn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/animalBtn" />
+
+    <Button
+        android:id="@+id/colorBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/atma_medium"
+        android:rotationX="15"
+        android:text="COLORS"
+        android:textSize="40sp"
+
+        app:backgroundTint="#2196F3"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/fruitBtn" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

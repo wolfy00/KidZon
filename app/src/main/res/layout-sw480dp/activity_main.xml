@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/eng"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="#FFFFFF"
+        android:fontFamily="@font/atma_medium"
+        android:rotationX="15"
+        android:text="ENGLISH"
+        android:textSize="75sp"
+        app:backgroundTint="#9C27B0"
+        app:layout_constraintBottom_toTopOf="@+id/math"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/math"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:fontFamily="@font/atma_medium"
+        android:rotationX="15"
+        android:text="MATHEMATICS"
+        android:textSize="75sp"
+        app:backgroundTint="#009688"
+        app:layout_constraintBottom_toTopOf="@+id/gk"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/eng" />
+
+    <Button
+        android:id="@+id/gk"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:fontFamily="@font/atma_medium"
+        android:rotationX="15"
+        android:text="GENERAL KNOWLEDGE"
+        android:textSize="75sp"
+        app:backgroundTint="#2196F3"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/math" />
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

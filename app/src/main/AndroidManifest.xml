@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.kidzon">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:screenOrientation="portrait"
+        android:label="KidZon"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.KidZon">
+        <activity android:name=".Rhyme"
+                  android:parentActivityName=".English"
+            android:label="Rhymes"
+            android:screenOrientation="portrait">
+
+        </activity>
+        <activity
+            android:name=".Shapes"
+            android:label="Shapes"
+            android:parentActivityName=".Mathematics"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Tables"
+            android:label="Tables"
+            android:parentActivityName=".Mathematics"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Colors"
+            android:label="colors"
+            android:parentActivityName=".GeneralKnowledge"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Fruits"
+            android:label="Fruits"
+            android:parentActivityName=".GeneralKnowledge"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".AnimalsName"
+            android:label="Animals Name"
+            android:parentActivityName=".Words"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Words"
+            android:label="Opposite Words"
+            android:parentActivityName=".English"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Count"
+            android:label="Numbers"
+            android:parentActivityName=".Mathematics"
+            android:screenOrientation="portrait" />
+        <activity android:name=".SmallAlphabet" />
+        <activity
+            android:name=".CapsAlphabet"
+            android:label="Alphabets"
+            android:parentActivityName=".English"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".GeneralKnowledge"
+            android:label="General Knowledge"
+            android:parentActivityName=".MainActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Mathematics"
+            android:label="Mathematics"
+            android:parentActivityName=".MainActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".English"
+            android:label="English"
+            android:parentActivityName=".MainActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".MainActivity"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>
